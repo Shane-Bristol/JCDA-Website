@@ -218,11 +218,12 @@ height: 200px;
 .stats b {
     font-size: 25px;
 }
-form {
-    background: linear-gradient(90deg, rgba(59, 159, 69, 0.88), rgba(41, 165, 70, 0.45), rgba(6, 173, 56, 0.12));
-    padding: 20px;
-    max-width: 650px;
-    border: 1px solid #ccc;
+form { 
+    background: linear-gradient(90deg, rgba(59, 159, 69, 0.88), rgba(41, 165, 70, 0.45), rgba(6, 173, 56, 0.12)); 
+    padding: 20px; 
+    width: 100%;
+    max-width: 650px; 
+    border: 1px solid #ccc; 
 }
 label {
     display: block;
@@ -237,20 +238,24 @@ input, textarea {
 #formMessage {
     font-weight: bold;
 }
-.contact-layout {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 25px;
-    align-items: start;
+.contact-layout { 
+    display: grid; 
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); 
+    gap: 25px; 
+    align-items: start; 
+    width: 100%;
 }
 
-.contact-info,
-form {
-    background: white;
-    padding: 25px;
-    border: 1px solid #e2e8ef;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(20, 50, 80, 0.06);
+.contact-info, 
+form { 
+    background: white; 
+    padding: 25px; 
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    border: 1px solid #e2e8ef; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(20, 50, 80, 0.06); 
 }
 
 .contact-info h2,
@@ -272,30 +277,93 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 @media (max-width: 991px) {
+
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info,
+    .contact-layout form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
 }
+
 @media (max-width: 767px) {
+
     .top {
         display: block;
         text-align: center;
     }
+
     nav {
         margin-top: 15px;
     }
+
     nav a {
         display: block;
-        margin: 2px;
+        margin: 4px;
     }
-    .cards, .gallery, .stats {
+
+    .cards,
+    .gallery,
+    .stats {
         grid-template-columns: 1fr;
     }
+
+    .contact-layout {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-layout form {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    textarea {
+        min-height: 150px;
+    }
+
     .hero h1 {
         font-size: 27px;
     }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .content {
+        padding: 20px 15px;
+    }
+
 }
