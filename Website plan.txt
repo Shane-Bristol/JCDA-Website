@@ -1,0 +1,100 @@
+Home Page
+The Home Page should introduce the Jamaica Community Development Association.
+It should include: 
+logo- Done
+navigation menu-Done
+hero section - Done
+welcome message- Done 
+mission statement-Done
+one featured event - Done
+suitable call-to-action buttons-Done
+footer -Done
+The page should be visually appealing and should clearly communicate the purpose of the organization. (Green Theme) 
+
+
+About Us Page
+The About Us page should provide background information about the organization
+This may include;
+history of JCDA- Done
+vision- Done
+mission- Done
+values- Done
+major achievements- Done
+team member profiles- Done
+The content should be organized clearly using headings, sections, images or placeholders, and suitable
+page layout.            
+
+Events Page
+The Events page should present upcoming community events using event cards or another suitable
+layout. 
+Each event should include
+event title - Done
+date - Done
+location- Done
+category- Done
+brief description.- Done
+Students should include at least four event entries. 
+
+
+Projects/Gallery Page
+This page should combine information about the organization’s community projects with a small gallery
+of related images. 
+Students should include
+current or completed projects- Done
+brief project description- Done
+images or placeholders - Done
+simple statistics such as trees planted, youth trained, families assisted, or
+community centers renovated.- Done
+
+
+Contact Page
+The Contact page should include the organization’s contact information and a contact form. 
+The contact form must include:
+• Full Name- Done
+• Email Address- Done
+• Subject- Done
+• Message- Done
+
+RESPONSIVE DESIGN REQUIREMENTS
+The website must be responsive and usable on different screen sizes, including desktop, tablet, and
+mobile devices. 
+Students should design for the following general screen sizes:
+Device Type Screen Width
+Desktop Greater than 992px- Done
+Tablet 768px to 991px- Done
+Mobile Below 768px- Done
+
+
+JAVASCRIPT REQUIREMENTS
+Students must include at least two basic JavaScript features.
+One required feature must be:
+1. Contact form validation- Done
+The second feature may be selected from the following:
+• Event filtering - Done
+
+
+JavaScript Flowchart
+
+
+                WEBSITE
+                     │
+          ┌──────────┴─────┐
+          │                     │
+     EVENT FILTER            CONTACT FORM
+          │                     │
+     User clicks             User clicks
+       a button                Submit
+          │                     │
+          ▼                     ▼
+   filterEvents()          Check the fields
+          │                        │
+          ▼              ┌──────┴──────┐
+   Find all events        │             │
+          │            Empty?        Complete?
+          │              │             │
+          ▼              ▼             ▼
+   Check category      Red          Green
+          │           message       message
+          ▼
+   Show matching
+   Hide others
